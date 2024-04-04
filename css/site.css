@@ -140,7 +140,7 @@ pull the psudoelement down overtop the section below with a negative-margin val,
     padding-top: 5rem;
     padding-bottom: 5rem;  
     position: relative;  
-    margin-top: -3rem;
+    margin-top: -2rem;
 }
 
 .section-page>.container::after {
@@ -152,18 +152,19 @@ pull the psudoelement down overtop the section below with a negative-margin val,
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3rem;
+    height: 2rem;
     z-index: 1;
+    clip-path: polygon(0% 0%, 80% 100%, 100% 0%)
 }
 
 
 /* Alternating shapes for the psudoelement */
 .section-page:nth-child(odd)>.container::after {
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(0% 0%, 95% 100%, 100% 0%)
 }
 
 .section-page:nth-child(even)>.container::after {
-    clip-path: polygon(0 0, 0 20%, 100% 0);
+    clip-path: polygon(0% 0%, 5% 100%, 100% 0%);
 }
 
 /* This makes the color dynamic and we are including the .section-page so we can color both in the same line*/
