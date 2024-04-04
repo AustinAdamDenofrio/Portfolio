@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="/css/themes.css" />
     <link rel="stylesheet" href="/css/iconCard.css" />
     <link rel="stylesheet" href="/css/menuPill.css" />
-    
+
 
 
 </head>
@@ -54,11 +54,18 @@
 <body data-ad-theme="orange">
 
     <!-- Nav Bar -->
-    <div id="menuPillContainer" class="navbar navbar-dark"> 
+    <div id="menuPillContainer" class="navbar navbar-dark">
         <nav id="menuPill" class="navbar-nav text-light">
             <!-- home icon -->
             <div class="nav-item">
-                <a class="nav-link" href="#home">
+                <a 
+                    class="nav-link" 
+                    href="#home" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom"
+                    data-bs-title="Home" 
+                    data-bs-custom-class="nav-tooltip">
+
                     <div class="icon-container">
                         <i class="bi bi-house-fill"></i>
                     </div>
@@ -67,7 +74,12 @@
             </div>
             <!-- info icon -->
             <div class="nav-item">
-                <a class="nav-link" href="#about">
+                <a class="nav-link" href="#about" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom"
+                    data-bs-title="About Me" 
+                    data-bs-custom-class="nav-tooltip">
+
                     <div class="icon-container">
                         <i class="bi bi-file-person-fill"></i>
                     </div>
@@ -76,7 +88,12 @@
             </div>
             <!-- skills icon -->
             <div class="nav-item">
-                <a class="nav-link" href="#skills">
+                <a class="nav-link" href="#skills"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom"
+                data-bs-title="Skills" 
+                data-bs-custom-class="nav-tooltip">
+                
                     <div class="icon-container">
                         <i class="bi bi-tools"></i>
                     </div>
@@ -84,9 +101,13 @@
                 </a>
             </div>
             <!-- projects -->
-            
             <div class="nav-item">
-                <a class="nav-link" href="#projects">
+                <a class="nav-link" href="#projects"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom"
+                data-bs-title="Projects" 
+                data-bs-custom-class="nav-tooltip">
+                
                     <div class="icon-container">
                         <i class="bi bi-backpack2"></i>
                     </div>
@@ -95,7 +116,12 @@
             </div>
             <!-- challenges -->
             <div class="nav-item">
-                <a class="nav-link" href="#challenges">
+                <a class="nav-link" href="#challenges"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom"
+                data-bs-title="Challenges" 
+                data-bs-custom-class="nav-tooltip">
+                
                     <div class="icon-container">
                         <i class="bi bi-code-square"></i>
                     </div>
@@ -104,7 +130,12 @@
             </div>
             <!-- blog -->
             <div class="nav-item">
-                <a class="nav-link" href="#blog">
+                <a class="nav-link" href="#blog"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom"
+                data-bs-title="Blog" 
+                data-bs-custom-class="nav-tooltip">
+                
                     <div class="icon-container">
                         <i class="bi bi-quote"></i>
                     </div>
@@ -113,7 +144,12 @@
             </div>
             <!-- contact -->
             <div class="nav-item">
-                <a class="nav-link" href="#contact">
+                <a class="nav-link" href="#contact"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom"
+                data-bs-title="Contact Me" 
+                data-bs-custom-class="nav-tooltip">
+                
                     <div class="icon-container">
                         <i class="bi bi-envelope-at-fill"></i>
                     </div>
@@ -185,18 +221,24 @@
                         </h2>
 
                         <p>
-                            I'm a Fullstack Web Developer using the ASP.NET Core and Blazer frameworks and have an additional background in Embedded Software QA for GE Appliances.
-                            My focus is on bringing high-value, problem-solving skillsets to the marketplace to create as much value for the company and community as possible.
-                            I design websites from the ground up, but have many years experience in team oriented settings. Combining educational and professional experience i have
-                            over 2 years experience in IT. 
+                            I'm a Fullstack Web Developer using the ASP.NET Core and Blazer frameworks and have an
+                            additional background in Embedded Software QA for GE Appliances.
+                            My focus is on bringing high-value, problem-solving skillsets to the marketplace to create
+                            as much value for the company and community as possible.
+                            I design websites from the ground up, but have many years experience in team oriented
+                            settings. Combining educational and professional experience i have
+                            over 2 years experience in IT.
                         </p>
                         <p>
-                            Professional experience is gray and black box level software QA at GE Appliances. My specialization was BLE/WiFi comminication 
-                            for appliances. 
+                            Professional experience is gray and black box level software QA at GE Appliances. My
+                            specialization was BLE/WiFi comminication
+                            for appliances.
                         </p>
                         <p>
-                            Educational background includes high-intensity Full-Stack Web Development in Blazer and ASP.NET through Coder Foundry, some Harvard online 
-                            Computer Science, Front-End Web Dev using HTML, CSS, and JavaScripts and C# for software development at Code Louisville.
+                            Educational background includes high-intensity Full-Stack Web Development in Blazer and
+                            ASP.NET through Coder Foundry, some Harvard online
+                            Computer Science, Front-End Web Dev using HTML, CSS, and JavaScripts and C# for software
+                            development at Code Louisville.
                         </p>
 
                     </div>
@@ -226,7 +268,8 @@
                                     See my <a href="#projects">projects</a> section for examples!
                                 </p>
                                 <p>
-                                    I use ASP.NET Core and Blazer frameworks to build websites. Trained to use modern design
+                                    I use ASP.NET Core and Blazer frameworks to build websites. Trained to use modern
+                                    design
                                     styles and methods to create a contemperary website from top to bottom.
                                 </p>
                             </div>
@@ -246,13 +289,16 @@
 
                             </div>
                             <div class="icon-card-body">
-                                <p>                                    
-                                    I design beautiful website layouts leveraging HTML, CSS, and Bootstrap to craft responsive websites with 
-                                    modern design techniques. Creating an exceptional front-end experience. My approach emphasizes efficiency, 
+                                <p>
+                                    I design beautiful website layouts leveraging HTML, CSS, and Bootstrap to craft
+                                    responsive websites with
+                                    modern design techniques. Creating an exceptional front-end experience. My approach
+                                    emphasizes efficiency,
                                     optimal performance, and end user satisfaction.
                                 </p>
                                 <p>
-                                    I use Bootstrap to streamline styling productive styling, CSS to go modify bootstrap classes or create 
+                                    I use Bootstrap to streamline styling productive styling, CSS to go modify bootstrap
+                                    classes or create
                                     custom styling to modify and style my HTML in an object oriented CSS methodology.
                                 </p>
                             </div>
@@ -268,11 +314,14 @@
                             </div>
                             <div class="icon-card-body">
                                 <p>
-                                    Tactfully design JavaScript to modify, delete, and inject styles and element on the DOM. 
+                                    Tactfully design JavaScript to modify, delete, and inject styles and element on the
+                                    DOM.
                                 </p>
                                 <p>
-                                    I use JavaScript throughout multiple projects to communcate between the server and the client side. Often 
-                                    passing data from forms to the server to be used for various tasks, like generating Emails or collect data.
+                                    I use JavaScript throughout multiple projects to communcate between the server and
+                                    the client side. Often
+                                    passing data from forms to the server to be used for various tasks, like generating
+                                    Emails or collect data.
                                 </p>
                             </div>
                         </div>
@@ -299,13 +348,13 @@
                     <div class="col-12 col-lg-4">
                         <div class="icon-card">
                             <div class="icon-card-header">
-                                <img class="icon"
-                                    src="/img/icons/git.png" />
+                                <img class="icon" src="/img/icons/git.png" />
                                 <img class="icon" src="/img/icons/github.png" />
                             </div>
                             <div class="icon-card-body">
                                 <p>
-                                    I use Git and Github respectfully as version control and repository management. Using branching 
+                                    I use Git and Github respectfully as version control and repository management.
+                                    Using branching
                                     tecniques and various other enterprise level stratiigies to safely manage code-base.
                                 </p>
                             </div>
@@ -347,7 +396,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 d-none d-lg-block text-lg-end text-light">
-                    <a href="https://www.linkedin.com/in/austin-denofrio-286792223/" target="_blank" class="text-decoration-none">
+                    <a href="https://www.linkedin.com/in/austin-denofrio-286792223/" target="_blank"
+                        class="text-decoration-none">
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <a href="https://github.com/AustinAdamDenofrio" target="_blank" class="text-decoration-none">
@@ -373,8 +423,14 @@
     <!-- Scripts -->
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap Tooltips (mobile menuPill dropdown content) -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
