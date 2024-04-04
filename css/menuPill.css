@@ -25,7 +25,8 @@
     transition: max-width 0.25s ease-in-out;
 }
 
-#menuPill .nav-link:hover {
+#menuPill .nav-link:hover,
+#menuPill .nav-link.active {
     max-width: 300px;
 }
 
@@ -53,20 +54,60 @@
 /* desktop */
 @media (min-width: 768px) {
 
+
     #menuPill>.nav-item:nth-child(1) .icon-container {
+            /* default rounding the top edges for vertical view */
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
+
+            /* When top icon is not being hovered transition back to 
+            normal state at delay for visual fluidity for the 
+            retraction of the span link content*/
+        transition-property:  border-top-right-radius;
+        transition-timing-function: ease-out;
+        transition-duration: 0.1s;
+        transition-delay: 0.25s;
     }
 
+
+        /* Selector is for active tabs and for hovers */
+    #menuPill>.nav-item:nth-child(1)>.nav-link:hover .icon-container,
+    #menuPill>.nav-item:nth-child(1)>.nav-link.active .icon-container {
+            /* square the pill top corner and set the delay to be instant */
+        border-top-right-radius: 0;
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+    /* default rounding the bottom edges for vertical view */
     #menuPill>.nav-item:nth-last-child(1) .icon-container {
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
+
+            /* When top icon is not being hovered transition back to 
+            normal state at delay for visual fluidity for the 
+            retraction of the span link content*/
+        transition-property:  border-bottom-right-radius;
+        transition-timing-function: ease-out;
+        transition-duration: 0.1s;
+        transition-delay: 0.25s;
     }
 
-    #menuPill .nav-link:hover .menu-label {
+        /* Selector is for active tabs and for hovers */
+    #menuPill>.nav-item:nth-last-child(1)>.nav-link:hover .icon-container,
+    #menuPill>.nav-item:nth-last-child(1)>.nav-link.active .icon-container {
+        border-bottom-right-radius: 0;
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+    #menuPill .nav-link:hover .menu-label,
+    #menuPill .nav-link.active .menu-label {
         max-width: 100%;
         padding-right: 1rem;
     }
+
+
 }
 
 
