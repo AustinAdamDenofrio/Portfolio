@@ -1,7 +1,7 @@
 :root {
     /* Fonts */
     --ad-title-font: "Bebas Neue", sans-serif;
-    --ad-subtitle-font: "Fira Sans", sans-serif;
+    --ad-subtitle-font: "Montserrat", sans-serif;
     --ad-heading-font: "Bebas Neue", sans-serif;
     --ad-body-font: "Roboto", sans-serif;
     /* Colors */
@@ -93,16 +93,16 @@ a:hover {
 
 .mainTitle {
     font-family: var(--ad-title-font);
-    font-size: 5rem;
+    font-size: 5.8rem;
     line-height: 4rem;    
 }
 
 .subTitle {
     font-family: var(--ad-subtitle-font);
     text-transform: uppercase;
-    font-size: 1.28rem;
-    font-weight: 300;
-    letter-spacing: 0.11rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .11rem;
 }
 
 footer {
@@ -132,7 +132,7 @@ footer .bi:hover {
 }
 
 #mainSmaller {
-    font-size: 4.2rem;
+    font-size: 4.63rem;
 }
 
 
@@ -183,8 +183,8 @@ footer .bi:hover {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .mainTitle {
-        font-size: 7rem;
-        line-height: 5.5rem;
+        font-size: 8.4rem;
+        line-height: 6rem;
     }
 
     .subTitle {
@@ -195,7 +195,7 @@ footer .bi:hover {
     }
 
     #mainSmaller {
-        font-size: 5.85rem;
+        font-size: 6.65rem;
     }
 }
 
