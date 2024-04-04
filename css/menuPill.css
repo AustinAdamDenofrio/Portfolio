@@ -13,17 +13,58 @@
     /* override bootstrap's navbar colors */
     --bs-navbar-active-color: var(--ad-theme-400);
     --bs-navbar-hover-color: var(--ad-theme-200);
-    --bs-nav-link-hover-color: var(--ad-theme-200);
-    
+    --bs-nav-link-hover-color: var(--ad-theme-200);    
     /* END override bootstrap's navbar colors */
 
-
+    --menu-bg-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     padding: 0;
 }
 
 #menuPill .icon-container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--menu-bg-color);
     padding: 0.5rem;
+}
+
+#menuPill .menu-label {
+    background-color: var(--menu-bg-color);
+    padding: .5rem 0;
+    border-radius: 0 2rem 2rem 0;
+
+    max-width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transition: 
+        max-width 0.25s ease-in-out,
+        padding-right 0.25s ease-in-out;
+}
+
+
+
+/* desktop */
+@media (min-width: 768px) {
+
+    #menuPill>.nav-item:nth-child(1) .icon-container {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    #menuPill>.nav-item:nth-last-child(1) .icon-container {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    #menuPill .nav-link:hover .menu-label {
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+}
+
+
+/* Mobile size */
+@media (max-width: 767.98px) {
+
+
 }
