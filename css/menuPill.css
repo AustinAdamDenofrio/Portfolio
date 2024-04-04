@@ -107,7 +107,10 @@
         padding-right: 1rem;
     }
 
-
+    .section-page {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
 }
 
 
