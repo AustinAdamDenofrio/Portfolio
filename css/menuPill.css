@@ -1,0 +1,14 @@
+#menuPillContainer {
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+}
+
+#menuPill {
+    margin-left: 1rem;
+
+}
+
+#menuPill .nav-link {
+    display: flex;
+}
