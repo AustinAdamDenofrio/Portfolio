@@ -10,6 +10,14 @@
 }
 
 #menuPill .nav-link {
+    /* override bootstrap's navbar colors */
+    --bs-navbar-active-color: var(--ad-theme-400);
+    --bs-navbar-hover-color: var(--ad-theme-200);
+    --bs-nav-link-hover-color: var(--ad-theme-200);
+    
+    /* END override bootstrap's navbar colors */
+
+
     display: flex;
     align-items: center;
     padding: 0;
