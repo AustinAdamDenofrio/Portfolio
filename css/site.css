@@ -131,6 +131,54 @@ footer .bi:hover {
     background-color: var(--ad-theme-150);
 }
 
+
+/* #region section-page transitions from one section to another */
+
+/* position the psudoelement "after" to the bottom of section-page, shape with clip-path and then style,
+pull the psudoelement down overtop the section below with a negative-margin val, and move to the front with z-index.*/
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;  
+    position: relative;  
+    margin-top: -3rem;
+}
+
+.section-page>.container::after {
+
+    content: "";
+    position: absolute;
+
+    /* force psudoelement to the bottom and stretched across the bottom left to right */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    z-index: 1;
+}
+
+
+/* Alternating shapes for the psudoelement */
+.section-page:nth-child(odd)>.container::after {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.section-page:nth-child(even)>.container::after {
+    clip-path: polygon(0 0, 0 20%, 100% 0);
+}
+
+/* This makes the color dynamic and we are including the .section-page so we can color both in the same line*/
+.section-page:nth-child(odd),
+.section-page:nth-child(odd)>.container::after {
+    background-color: var(--ad-theme-150);
+}
+
+.section-page:nth-child(even),
+.section-page:nth-child(even)>.container::after {
+    background-color: var(--ad-theme-100);
+
+}
+/* #endregion section-page transitions from one section to another */
+
 #mainSmaller {
     font-size: 4.63rem;
 }
