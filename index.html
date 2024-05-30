@@ -171,10 +171,10 @@
             <div class="container text-center">
                 <h2 class="text-center display-3 mb-5">About Me</h2>
 
-                <div class="d-flex align-items-center flex-column">
-                    <img src="/img/custom_logos/proPhoto2.jpeg" class="p-3 card w-75 mb-1" />
-                    <p><b>Developer:</b> Austin Denofrio</p>
+                <div class="d-flex align-items-center justify-content-center rounded">
+                    <img src="/img/custom_logos/proPhoto2.jpeg" class="p-3 mb-1 " height="300px" />
                 </div>
+                <p><b>Developer:</b> Austin Denofrio</p>
 
                 <!-- Attribution Storyset -->
                 <!-- <div class="text-center">
@@ -189,7 +189,7 @@
                 </div> -->
                 <!-- END Attribution Storyset -->
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center ">
                     <div class="col-lg-8">
                         <h2 class="mainTitle p-3">
                             Hello!
@@ -369,8 +369,9 @@
 
                                 <!-- card img -->
                                 <picture>
-                                    <source srcset="/img/logos/BugBox.png" media="min-width: 991.98px" />
-                                    <img src="/img/logos/BugBox.png" alt="BugBox" />
+                                    <source srcset="/img/BugTracker/GlitchLogoBrownBG.png"
+                                        media="min-width: 991.98px" />
+                                    <img src="/img/BugTracker/TasketLogoBrownBG.png" alt="BugBox" />
                                 </picture>
 
                                 <!-- Overlay card -->
@@ -394,8 +395,10 @@
 
                                 <!-- card img -->
                                 <picture>
-                                    <source srcset="/img/logos/Contact_Pro.png" media="min-width: 992px" />
-                                    <img src="/img/logos/Contact_Pro.png" alt="ContactPro Addressbook" />
+                                    <source srcset="/img/CloudContacts/CloudContactsLogoGreenBG.png"
+                                        media="min-width: 992px" />
+                                    <img src="/img/CloudContacts/CloudContactsLogoGreenBG.png"
+                                        alt="ContactPro Addressbook" />
                                 </picture>
 
                                 <!-- Overlay card -->
@@ -418,8 +421,8 @@
 
                                 <!-- card img -->
                                 <picture>
-                                    <source srcset="/img/logos/BugBox.png" media="min-width: 992px" />
-                                    <img src="/img/logos/Tech_Talk.png" alt="Blog" />
+                                    <source srcset="/img/Blog/CurrentBlogLogoOrangeBG.png" media="min-width: 992px" />
+                                    <img src="/img/Blog/CurrentBlogLogoOrangeBG.png" alt="Blog" />
                                 </picture>
 
                                 <!-- Overlay card -->
@@ -594,179 +597,33 @@
                 </p>
                 <!-- Blog Cards -->
                 <div id="blogs" class="">
-                    <!-- blog card 1 -->
-                     <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog FlyingGirl Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
+                    <template id="blog-card-template">
+                        <article class="card mb-4 blog-article">
+                            <div class="row g-0 blog-row">
+                                <div class="col-lg-4 blog-header">
+                                    <a href="#" class="blog-image-link">
+                                    </a>
+                                    <div class="blog-date">
+                                        <div class="blog-day"></div>
+                                        <div class="blog-month"></div>
                                     </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-
                                 </div>
-                            </div>
-
-                        </div>
-
-                     </article>
-                     <!-- END blog card 1 -->
-                     <!-- blog card 2 -->
-                     <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog FlyingGirl Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">12</div>
-                                    <div class="blog-month">FEBUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title blog-title">STORING images in a database</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
+                                <div class="col-lg-8">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                        <h2 class="card-title"></h2>
+                                        <p class="card-text line-clamp">
+                                        </p>
+                                        <div>
+                                            <a href="#" class="btn btn-primary">Read More</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <small class="text-muted"></small>
+                                        </p>
                                     </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-
                                 </div>
                             </div>
-
-                        </div>
-
-                     </article>
-                     <!-- END blog card 2 -->
-                     <!-- blog card 3 -->
-                     <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog Coder Tag Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">23</div>
-                                    <div class="blog-month">DECEMBER</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title blog-title">SHow TAGs effect code</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                     </article>
-                     <!-- END blog card 3 -->
-                     <!-- blog card 4 -->
-                     <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Blog Decision Road Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">30</div>
-                                    <div class="blog-month">June</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title blog-title">Logic Engine</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                     </article>
-                     <!-- END blog card 4 -->
-
+                        </article>
+                    </template>
                 </div>
             </div>
         </section>
@@ -781,92 +638,46 @@
                 <div class="p-3">
                     <form action="#" class="row g-2" name="Contact Info" method="POST" data-netlify="true">
                         <div class="col-12 col-md-6">
-                            <label 
-                                for="firstNameInput" 
-                                class="form-label">
-                                    First Name
+                            <label for="firstNameInput" class="form-label">
+                                First Name
                             </label>
-                            <input 
-                                id="firstNameInput" 
-                                class="form-control" 
-                                required 
-                                name="firstName" 
-                                type="text"
-                                placeholder="First Name" 
-                                aria-label="First Name" />
+                            <input id="firstNameInput" class="form-control" required name="firstName" type="text"
+                                placeholder="First Name" aria-label="First Name" />
                         </div>
                         <div class="col-12 col-md-6">
-                            <label 
-                                for="lastNameInput" 
-                                class="form-label">
-                                    Last Name
+                            <label for="lastNameInput" class="form-label">
+                                Last Name
                             </label>
-                            <input 
-                                id="lastNameInput" 
-                                class="form-control" 
-                                required
-                                name="lastName" 
-                                type="text"
-                                placeholder="Last Name" 
-                                aria-label="Last Name" />
+                            <input id="lastNameInput" class="form-control" required name="lastName" type="text"
+                                placeholder="Last Name" aria-label="Last Name" />
                         </div>
                         <div class="col-12 col-md-6">
-                            <label 
-                                for="emailInput" 
-                                class="form-label">
-                                    Email
+                            <label for="emailInput" class="form-label">
+                                Email
                             </label>
-                            <input 
-                                id="emailInput" 
-                                class="form-control" 
-                                required 
-                                name="email" 
-                                type="email" 
-                                placeholder="Email"
-                                aria-label="Email" />
+                            <input id="emailInput" class="form-control" required name="email" type="email"
+                                placeholder="Email" aria-label="Email" />
                         </div>
                         <div class="col-12 col-md-6">
-                            <label 
-                                for="phoneNumInput" 
-                                class="form-label">
-                                    Phone Number (optional)
+                            <label for="phoneNumInput" class="form-label">
+                                Phone Number (optional)
                             </label>
-                            <input 
-                                id="phoneNumInput" 
-                                class="form-control" 
-                                name="phoneNum" 
-                                type="tel" 
-                                placeholder="Phone #"
-                                aria-label="Phone Number" />
+                            <input id="phoneNumInput" class="form-control" name="phoneNum" type="tel"
+                                placeholder="Phone #" aria-label="Phone Number" />
                         </div>
                         <div class="col-12">
-                            <label for="subjectInput" 
-                                class="form-label">
-                                    Subject
+                            <label for="subjectInput" class="form-label">
+                                Subject
                             </label>
-                            <input 
-                                id="subjectInput" 
-                                class="form-control" 
-                                required 
-                                name="subject" 
-                                type="text"
-                                placeholder="Subject" 
-                                aria-label="Sunject" />
+                            <input id="subjectInput" class="form-control" required name="subject" type="text"
+                                placeholder="Subject" aria-label="Sunject" />
                         </div>
                         <div class="col-12">
-                            <label 
-                                for="messageInput" 
-                                class="form-label">
-                                    Message
+                            <label for="messageInput" class="form-label">
+                                Message
                             </label>
-                            <textarea 
-                                class="form-control" 
-                                id="message" 
-                                name="message" 
-                                placeholder="Message"
-                                aria-label="Message" 
-                                rows="4" 
-                                required></textarea>
+                            <textarea class="form-control" id="message" name="message" placeholder="Message"
+                                aria-label="Message" rows="4" required></textarea>
                         </div>
                         <div class="col-12 text-end">
                             <button class="btn btn-primary" type="submit">
@@ -876,7 +687,7 @@
 
                     </form>
                 </div>
-        <!-- END Contact Form -->
+                <!-- END Contact Form -->
             </div>
 
         </section>
@@ -905,7 +716,7 @@
                     <a href="https://github.com/AustinAdamDenofrio" target="_blank" class="text-decoration-none">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a class="text-decoration-none" target="_blank" href="https://twitter.com/A_Denofrio" >
+                    <a class="text-decoration-none" target="_blank" href="https://twitter.com/A_Denofrio">
                         <i class="bi bi-twitter-x"></i>
                     </a>
                     <a href="mailto:denofrioaustindev@gmail.com" target="_blank" class="text-decoration-none">
@@ -919,12 +730,12 @@
     <!-- #region Modals -->
     <!-- tabindex="-1" disallows user to select with tabing -->
 
-    <!-- Project 1 Modal -->
+    <!-- Project 1 Modal Bug Tracker-->
     <div class="modal fade" id="projectOneModal" tabindex="-1" aria-labelledby="projectOneModal" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectOneModalLabel">Bug Box</h1>
+                    <h1 class="modal-title fs-5" id="projectOneModalLabel">Tasket</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -951,7 +762,7 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/logos/BugBox.png" class="d-block w-100"
+                                            <img src="/img/BugTracker/TasketLogoBrownBG.png" class="d-block w-100"
                                                 alt="Bug Tracker Logo" />
                                         </div>
                                         <div class="carousel-item">
@@ -981,7 +792,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7">
-                                <h3>Bug Box</h3>
+                                <h3>Tasket</h3>
                                 <div>
                                     <p>
                                         BugBox is a software defect tracking system. Commonly known as a bug tracker.
@@ -1044,12 +855,12 @@
 
 
 
-    <!-- Project 2 Modal -->
+    <!-- Project 2 Modal Cloud Contacts -->
     <div class="modal fade" id="projectTwoModal" tabindex="-1" aria-labelledby="projectTwoModal" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectTwoModalLabel">Contact Pro</h1>
+                    <h1 class="modal-title fs-5" id="projectTwoModalLabel">Cloud Contacts</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -1076,19 +887,19 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/logos/Contact_Pro.png" class="d-block w-100"
-                                                alt="Bug Tracker Logo" />
+                                            <img src="/img/CloudContacts/CloudContactsLogoGreenBG.png"
+                                                class="d-block w-100" alt="Bug Tracker Logo" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
-                                                alt="Screen shot one" />
+                                            <img src="/img/CloudContacts/ContactsAllContactsPage.png"
+                                                class="d-block w-100" alt="Screen shot one" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            <img src="/img/CloudContacts/ContactsEditCard.png" class="d-block w-100"
                                                 alt="Screen shot two" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            <img src="/img/CloudContacts/ContactCategories.png" class="d-block w-100"
                                                 alt="Screen shot three" />
                                         </div>
 
@@ -1106,15 +917,22 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7">
-                                <h3>Bug Box</h3>
+                                <h3>Cloud Contacts</h3>
                                 <div>
                                     <p>
-                                        BugBox is a software defect tracking system. Commonly known as a bug tracker.
-                                        Insectcide is built with ASP.NET, MVC, C# and SQL. A role based security
-                                        system was implemented to create permission based roles. The roles of Admin,
-                                        Project Manager, Developer and Submitter restrict what the user can see and do.
-                                        The software allows for users to submit tickets and those tickets are tracked
-                                        through status from Open to Complete.
+                                        Cloud Contacts is a customizable address book that stores all your contacts in
+                                        the cloud.
+                                        This Blazor WebApp allows the user to seemlessly add contacts, sort them into
+                                        categories,
+                                        and email them based of several different criteria. The app stores the users'
+                                        contacts in
+                                        a Postgres DataBase based on the users login credentials, keeping the contacts
+                                        private from
+                                        outside users. This blazor webapp feature Bootstrap, CSS, HTML, and some Blazor
+                                        features to
+                                        style the page. The server side is handled with multiple rendermodes using
+                                        Blazor and depending
+                                        on the rendermode will switch between API calls and SignalR to
 
                                     </p>
                                     <p>
@@ -1157,7 +975,10 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Visit Project</button>
+                    <a type="button" class="btn btn-primary" href="https://cloudcontacts-production.up.railway.app/"
+                        target="_blank">
+                        Visit Project
+                    </a>
                 </div>
             </div>
 
@@ -1167,12 +988,12 @@
 
 
 
-    <!-- Project 3 Modal -->
+    <!-- Project 3 Modal Current Blogs-->
     <div class="modal fade" id="projectThreeModal" tabindex="-1" aria-labelledby="projectThreeModal" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectThreeModalLabel">Tech Talk</h1>
+                    <h1 class="modal-title fs-5" id="projectThreeModalLabel">Current Blogs</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -1199,19 +1020,19 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/logos/Tech_Talk.png" class="d-block w-100"
+                                            <img src="/img/Blog/CurrentBlogLogoOrangeBG.png" class="d-block w-100"
                                                 alt="Bug Tracker Logo" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            <img src="/img/Blog/BlogDetails.png" class="d-block w-100"
                                                 alt="Screen shot one" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            <img src="/img/Blog/BlogHomePage.png" class="d-block w-100"
                                                 alt="Screen shot two" />
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            <img src="/img/Blog/RichTextPostEdit.png" class="d-block w-100"
                                                 alt="Screen shot three" />
                                         </div>
 
@@ -1229,7 +1050,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7">
-                                <h3>Bug Box</h3>
+                                <h3>Current Blogs</h3>
                                 <div>
                                     <p>
                                         BugBox is a software defect tracking system. Commonly known as a bug tracker.
@@ -1281,7 +1102,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Visit Project</button>
+                    <a type="button" href="https://currentblogs-production.up.railway.app/" class="btn btn-primary"
+                        target="_blank">Visit
+                        Project</a>
                 </div>
             </div>
 
@@ -1305,6 +1128,9 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <!-- BlogPost link Scripts -->
+    <script src="/js/blogApi.js"></script>
 </body>
 
 </html>
