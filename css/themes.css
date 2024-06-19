@@ -95,9 +95,9 @@
     --ad-orange-200: hsl(19, 50%, 81%);
     --ad-orange-300: hsl(19, 50%, 71%);
     --ad-orange-400: hsl(19, 50%, 61%);
-    --ad-orange-500: hsl(19, 50%, 51%);
+    --ad-orange-500: rgb(193, 107, 68);
     --ad-orange-600: hsl(19, 50%, 41%);
-    --ad-orange-700: hsl(19, 50%, 31%);
+    --ad-orange-700: rgb(119, 65, 40);
     --ad-orange-800: hsl(19, 50%, 21%);
     --ad-orange-850: hsl(19, 50%, 16%);
     --ad-orange-900: hsl(19, 50%, 11%);
