@@ -527,14 +527,19 @@
 
                                 <!-- Fizz Buzz card img -->
                                 <picture>
-                                    <source srcset="/img/logos/fizzbuzz_600.jpg" media="min-width: 991.98px" />
-                                    <img src="/img/logos/fizzbuzz_200.jpg" alt="Fizz Buzz" />
+                                    <source srcset="/img/ChallengeCards/FizzBuzz/FizzBuzz_650px.png"
+                                        media="min-width: 991.98px" />
+                                    <img src="/img/ChallengeCards/FizzBuzz/FizzBuzz_375px.png" alt="Fizz Buzz" />
                                 </picture>
 
                                 <!-- Overlay card -->
                                 <div class="hc-content">
-                                    <p>A full-stack bug tracker built with Blazor, ASP.NET, C# and SQL.</p>
-                                    <!-- <a class="" target="_blank" href="https://singular-biscochitos-c58e1b.netlify.app/"><button type="button" class="btn btn-primary">Learn More</button></a> -->
+                                    <p>A customizable FizzBuzz app where users set their own multiples and corresponding
+                                        output values via a user interface.</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#challengeFiveModal">
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1308,6 +1313,124 @@
         </div>
     </div>
     <!-- END Challenges 2 Modal Aibohphobia-->
+
+
+
+    <!-- Challenges 5 Modal FizzBuzz-->
+    <div class="modal fade" id="challengeFiveModal" tabindex="-1" aria-labelledby="challengeFiveModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="challengeFiveModalLabel">FizzBuzz</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-5">
+                                <div id="challengeFiveCarousel" class="carousel slide" data-bs-theme="dark">
+                                    <div class="carousel-indicators">
+                                        <button type="button" class="active" data-bs-target="#challengeFiveCarousel"
+                                            data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                                        </button>
+
+                                        <button type="button" data-bs-target="#challengeFiveCarousel"
+                                            data-bs-slide-to="1" aria-current="true" aria-label="Slide 2">
+                                        </button>
+
+                                        <button type="button" data-bs-target="#challengeFiveCarousel"
+                                            data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
+                                        </button>
+
+                                        <button type="button" data-bs-target="#challengeFiveCarousel"
+                                            data-bs-slide-to="3" aria-current="true" aria-label="Slide 4">
+                                        </button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/ChallengeCards/FizzBuzz/FizzBuzz_G_NoBG.svg"
+                                                class="d-block w-100" alt="Bug Tracker Logo" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/ChallengeCards/Aibohphobia/AibohphobiaMainPg.png"
+                                                class="d-block w-100" alt="Screen shot one" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/ChallengeCards/Aibohphobia/AibohphobiaCodePg.png"
+                                                class="d-block w-100" alt="Screen shot two" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/ChallengeCards/Aibohphobia/AibohphobiaLandingPg.png"
+                                                class="d-block w-100" alt="Screen shot three" />
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#challengeFiveCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#challengeFiveCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <h3>FizzBuzz - Premium</h3>
+                                <div>
+                                    <p>
+                                        This customizable FizzBuzz app allows users to modify the input values to create
+                                        their own unique FizzBuzz sequences. Through an intuitive user interface, users
+                                        can set their desired multiples and specify the corresponding output values. For
+                                        example, instead of the traditional multiples of 3 and 5 outputting "Fizz" and
+                                        "Buzz," users could choose multiples of 4 and 6 to output "Fizz" and "Buzz."
+                                        This flexibility makes the app versatile for various educational and
+                                        entertainment purposes, providing a fun and interactive way to explore number
+                                        patterns and logic.
+                                    </p>
+                                    <p>
+                                        I developed a front-end web app using JavaScript, HTML, and Bootstrap. This app
+                                        generates a table in the UI based on the user inputs and the premium part is the
+                                        user can choose the values for Fizz, Buzz, and the number to count to.
+                                    </p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h4>Project Type</h4>
+                                            <span>Web Application</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h4></h4>
+                                            <p class="fs-1">
+                                                <i class="devicon-javascript-plain colored" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="JavaScript"></i>
+                                                <i class="devicon-css3-plain colored" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="CSS"></i>
+                                                <i class="devicon-bootstrap-plain colored" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="Bootstrap"></i>
+                                                <i class="devicon-html5-plain colored" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="HTML 5"></i>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" href="https://fizz-buzzzz.netlify.app/" class="btn btn-primary"
+                        target="_blank">Visit
+                        Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END Challenges 5 Modal FizzBuzz-->
     <!-- #endregion Modals -->
 
 
